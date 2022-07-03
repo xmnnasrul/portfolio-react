@@ -36,6 +36,8 @@ function About() {
                             <small>700+ Completed</small>
                         </article>
                     </div>
+                    <p>Lorem  ipsam natus quidem dolor recusandae quo consequatur explicabo sint ex neque, laudantium temporibus quae incidunt laboriosam debitis voluptatem.</p>
+                    <a href="#contact" className='btn btn-primary'>Les`t Talk</a>
                 </div>
             </div>
         </section>
