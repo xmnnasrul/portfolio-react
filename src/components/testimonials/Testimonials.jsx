@@ -11,26 +11,6 @@ import './Testimonials.css'
 import "swiper/css";
 import "swiper/css/pagination";
 
-const data = [
-    {
-        avatar: Avtr1,
-        name: "Tina Snow",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, maxime quas laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? numquam at laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit?"
-    }, {
-        avatar: Avtr2,
-        name: "Shatta Wale",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, maxime quas numquam at laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit?"
-    }, {
-        avatar: Avtr3,
-        name: "Kuame Despite",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, maxime quas numquam at laudantium. laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? Dolorum, officia eligendi. Tenetur? ducimus suscipit?"
-    }, {
-        avatar: Avtr4,
-        name: "Nana McBrown",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? maxime quas numquam at laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit?"
-    }
-]
-
 function Testimonials() {
     return (
         <section id='testimonials'>
@@ -41,21 +21,43 @@ function Testimonials() {
                 spaceBetween={40}
                 slidesPerView={1}
                 pagination={{ clickable: true }}>
-                {
-                    data.map(({ avatar, name, review }, index) => {
-                        return (
-                            <SwiperSlide key={index} className="testimonial">
+                            <SwiperSlide  className="testimonial">
                                 <div className="client__avatar">
-                                    <img src={avatar} alt="clinet" />
+                                    <img src={Avtr1} alt="clinet" />
                                 </div>
-                                <h5 className='client__name'>{name}</h5>
+                                <h5 className='client__name'>Tina Snow</h5>
                                 <small className='client__review'>
-                                    {review}
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, maxime quas laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? numquam at laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit?
                                 </small>
                             </SwiperSlide>
-                        )
-                    })
-                }
+
+                            <SwiperSlide  className="testimonial">
+                                <div className="client__avatar">
+                                    <img src={Avtr2} alt="clinet" />
+                                </div>
+                                <h5 className='client__name'>Shatta wale</h5>
+                                <small className='client__review'>
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, maxime quas laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? numquam at laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit?
+                                </small>
+                            </SwiperSlide>
+                            <SwiperSlide  className="testimonial">
+                                <div className="client__avatar">
+                                    <img src={Avtr3} alt="clinet" />
+                                </div>
+                                <h5 className='client__name'>Kuame Despite</h5>
+                                <small className='client__review'>
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, maxime quas laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? numquam at laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit?
+                                </small>
+                            </SwiperSlide>
+                            <SwiperSlide  className="testimonial">
+                                <div className="client__avatar">
+                                    <img src={Avtr4} alt="clinet" />
+                                </div>
+                                <h5 className='client__name'>Nana McBrown</h5>
+                                <small className='client__review'>
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam praesentium, corporis odit tempore nisi cupiditate tenetur eum labore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ipsam omnis, maxime quas laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit? numquam at laudantium. Dolorum, officia eligendi. Tenetur? ducimus suscipit?
+                                </small>
+                            </SwiperSlide>
             </Swiper>
         </section>
     )
